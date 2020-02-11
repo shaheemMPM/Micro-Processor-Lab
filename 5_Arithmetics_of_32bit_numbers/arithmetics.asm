@@ -90,6 +90,7 @@
      
        add esp, 8                                         ; remove parameters
        pop ecx
-       pop ebx                                            ; restore registers in reverse order
+       pop ebx
+       pop edx                                            ; restore registers in reverse order
        mov eax, 0                                         ; no error
        ret
